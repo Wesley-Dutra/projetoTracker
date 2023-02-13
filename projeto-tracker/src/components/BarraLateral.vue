@@ -1,8 +1,8 @@
 <template>
     <header>
-        <h1>
-            <img src="../assets/logo.png" alt="logo teste do tracker" width="140">
-        </h1>
+        <div class="text-center">
+            <img src="../assets/logo.png" alt="logo teste do tracker" id="logo">
+        </div>
     </header>
 </template>
 
@@ -16,16 +16,29 @@
 
 <style scoped>
     header {
-        background: #1c9c7ce3;
+        background: #019367e3;
         width: 100%;
         height: 100vh;
-        padding: 20px;
+        padding: 10px;
+    }
+
+    #logo {
+        width: 150px;
     }
 
     @media only screen and (max-width: 768px) {
         header {
-            padding: 2.5em;
+            padding: 15px;
             height: auto;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        #logo {
+            width: 150px;
+            margin: auto;
         }
     }
 </style>
